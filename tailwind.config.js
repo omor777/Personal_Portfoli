@@ -18,9 +18,18 @@ module.exports = {
       },
       colors: {
         nil: "#2C98F0",
+        bgc: "#FFFFFF",
+        textColor: "rgba(0,0,0,0.7)",
       },
       container: {
         center: true,
+      },
+      letterSpacing: {
+        space: "5px",
+      },
+      boxShadow: {
+        shadow:
+          "box-shadow: box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;",
       },
     },
   },

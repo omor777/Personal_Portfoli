@@ -7,3 +7,11 @@ toggleBtn.addEventListener("click", function () {
   mainContent.classList.toggle("marginLeft");
   this.classList.toggle("active");
 });
+
+window.addEventListener("scroll", function () {
+  if (sideMenu.classList.contains("showWidth")) {
+    sideMenu.classList.remove("showWidth");
+    mainContent.classList.remove("marginLeft");
+    toggleBtn.classList.remove("active");
+  }
+});

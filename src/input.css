@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .caption {
+    @apply tracking-space font-Quicksand text-[0.6875rem] uppercase;
+  }
+  .title {
+    @apply tracking-space font-playFair text-lg font-bold uppercase;
+  }
+}
+
+@layer utilities {
+  .myShadow {
+    box-shadow:
+      rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+}
+
 /* custom css here */
 
 .main-content {
