@@ -5,6 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio website</title>
     <link rel="stylesheet" href="../dist/output.css" />
+    <!-- google font install-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/10d3ee6fa1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body class="">
+    <div class="wraper xl:container">
+      <!-- sidebar -->
+      <aside
+        id="side-menu"
+        class="fixed bottom-0 top-0 z-10 h-full w-0 overflow-x-hidden bg-[#F2F3F7] pb-14 md:w-[300px] md:overflow-x-visible md:overflow-y-scroll"
+      >
+        <!-- logo -->
+        <div class="logo mx-auto mt-10 w-[170px]">
+          <img src="../Assets/logo.jpg" class="h-auto w-full rounded-full" />
+        </div>
+
+        <!-- name -->
+        <div class="mt-8 flex flex-col items-center gap-2">
+          <h3 class="text-center font-playFair text-2xl font-bold capitalize">
+            Jackjos Ford
+          </h3>
+          <p class="text-center font-Quicksand text-sm uppercase">
+            <span class="text-nil">ui/ux designer</span>
+            <span class="text-slate-700">in philippines</span>
+          </p>
+        </div>
+
+        <!-- menu list -->
+        <ul class="mt-8 flex flex-col items-center gap-2">
+          <li>
+            <a
+              class="border-b border-b-nil text-center font-Quicksand text-sm uppercase text-nil"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="link text-center font-Quicksand text-sm uppercase"
+              href="#"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              class="link text-center font-Quicksand text-sm uppercase"
+              href="#"
+              >services</a
+            >
+          </li>
+          <li>
+            <a
+              class="link text-center font-Quicksand text-sm uppercase"
+              href="#"
+              >skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="link text-center font-Quicksand text-sm uppercase"
+              href="#"
+              >education</a
+            >
+          </li>
+          <li>
+            <a
+              class="link text-center font-Quicksand text-sm uppercase"
+              href="#"
+              >experience</a
+            >
+          </li>
+          <li>
+            <a
+              class="link text-center font-Quicksand text-sm uppercase"
+              href="#"
+              >work</a
+            >
+          </li>
+          <li>
+            <a
+              class="link text-center font-Quicksand text-sm uppercase"
+              href="#"
+              >blog</a
+            >
+          </li>
+          <li>
+            <a
+              class="link text-center font-Quicksand text-sm uppercase"
+              href="#"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- sidebar footer -->
+        <div class="mt-10 flex flex-col gap-2">
+          <p class="text-center font-Quicksand text-sm font-light">
+            &copy; Copyright 2023 All rights reserved.
+          </p>
+          <p class="text-center font-Quicksand text-sm font-light">
+            Made with by <span class="text-nil">Colorlib</span>
+          </p>
+          <p class="text-center font-Quicksand text-sm font-light">
+            Distributed by <span class="text-nil">ThemeWagon</span>
+          </p>
+          <p class="text-center font-Quicksand text-sm font-light">
+            Demo Images: <span class="text-nil"> Unsplash.com</span>
+          </p>
+        </div>
+
+        <!-- social icon -->
+        <footer class="mt-8 flex items-center justify-center gap-4">
+          <a class="text-nil" href="#"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a class="text-nil" href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a class="text-nil" href="#"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="text-nil" href="#"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </footer>
+      </aside>
+
+      <!--  px-4 transition duration-300 ease-linear md:ml-[300px] md:px-0 -->
+
+      <!-- main content -->
+
+      <main class="main-content relative md:ml-[300px]">
+        <section
+          class="hero-section relative flex h-screen items-center justify-center bg-heroImg bg-cover bg-center bg-no-repeat md:justify-start"
+        >
+          <div
+            class="flex h-screen w-[350px] flex-col items-center justify-center gap-6 md:w-[420px] md:pl-[3.8rem]"
+          >
+            <div class="flex w-full flex-col items-center">
+              <p
+                class="font-playFair text-3xl font-bold capitalize md:self-start md:text-6xl"
+              >
+                hi!
+              </p>
+              <p
+                class="font-playFair text-3xl font-bold capitalize md:self-start md:text-6xl"
+              >
+                I'm Jackjos
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <p
+                class="m w-full font-Quicksand text-lg font-light md:self-start"
+              >
+                100% html5 bootstrap templates Made by
+              </p>
+              <p class="self-start">
+                <a class="border-b border-b-nil text-xl text-nil" href="#"
+                  >colorlib.com</a
+                >
+              </p>
+            </div>
+
+            <button
+              class="mt-2 flex w-full items-center justify-center gap-2 border border-gray-500 py-2 md:w-fit md:self-start md:px-3"
+            >
+              <span class="font-Quicksand text-sm uppercase tracking-[2px]"
+                >download cv</span
+              >
+              <span class="text-sm"
+                ><i class="fa-solid fa-circle-down"></i
+              ></span>
+            </button>
+          </div>
+
+          <!--circle container  -->
+          <div class="circle-container absolute left-10 top-24 md:top-[52%]">
+            <div
+              class="mb-3 h-3 w-3 cursor-pointer rounded-full border-2 border-gray-600 bg-gray-600"
+            ></div>
+            <div
+              class="h-3 w-3 cursor-pointer rounded-full border-2 border-nil"
+            ></div>
+          </div>
+        </section>
+        <!-- bars -->
+        <div
+          class="bar-container fixed left-4 top-7 z-20 inline-block cursor-pointer md:hidden"
+        >
+          <div
+            class="bar1 bar my-[6px] h-[2px] w-8 bg-black transition-all"
+          ></div>
+          <div
+            class="bar2 bar my-[6px] h-[2px] w-8 bg-black transition-all"
+          ></div>
+          <div
+            class="bar3 bar my-[6px] h-[2px] w-8 bg-black transition-all"
+          ></div>
+        </div>
+        <!--  -->
+
+       
+      </main>
+      <!-- <div class="content relative">
+       
+      </div> -->
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>

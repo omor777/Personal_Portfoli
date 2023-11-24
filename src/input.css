@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* custom css here */
+
+.main-content {
+  transition: margin-left 0.5s;
+}
+
+.showWidth {
+  width: 300px;
+}
+
+.marginLeft {
+  margin-left: 300px;
+}
+
+/* javascript */
+
+.link {
+  position: relative;
+  /* border-bottom: 1px solid #2c98f0; */
+}
+
+#side-menu {
+  transition: 0.5s;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 1px;
+  bottom: 0;
+  background: #2c98f0;
+  left: 50%;
+  transition: width 0.2s linear;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 1px;
+  bottom: 0;
+  background: #2c98f0;
+  right: 50%;
+  transition: width 0.2s linear;
+}
+
+.link:hover::before {
+  width: 50%;
+}
+.link:hover::after {
+  width: 50%;
+}
+
+/* js bars */
+.active .bar1 {
+  transform: translateY(8px) rotate(-45deg);
+  transition: transform 0.3;
+}
+.active .bar2 {
+  opacity: 0;
+  transition: transform 0.3;
+}
+
+.active .bar3 {
+  transform: translateY(-8px) rotate(45deg);
+  transition: transform 0.3;
+}
