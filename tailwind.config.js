@@ -15,11 +15,13 @@ module.exports = {
       },
       backgroundImage: {
         heroImg: "url('../Assets/hero.webp')",
+        parallax: "rgba(0,0,0,0.7),rgba(0,0,0,0.7),url('../Assets/hero.webp')",
       },
       colors: {
         nil: "#2C98F0",
         bgc: "#FFFFFF",
         textColor: "rgba(0,0,0,0.7)",
+        lightWhite:'rgba(255,255,255,0.7)'
       },
       container: {
         center: true,
