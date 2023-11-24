@@ -19,9 +19,9 @@ module.exports = {
       },
       colors: {
         nil: "#2C98F0",
-        bgc: "#FFFFFF",
+        bgColor: "#F2F3F7",
         textColor: "rgba(0,0,0,0.7)",
-        lightWhite:'rgba(255,255,255,0.7)'
+        lightWhite: "rgba(255,255,255,0.7)",
       },
       container: {
         center: true,
