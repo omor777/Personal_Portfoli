@@ -16,6 +16,7 @@ module.exports = {
       backgroundImage: {
         heroImg: "url('../Assets/hero.webp')",
         parallax: "rgba(0,0,0,0.7),rgba(0,0,0,0.7),url('../Assets/hero.webp')",
+        grad: "rgba(0,0,0,0.7),rgba(0,0,0,0.7)",
       },
       colors: {
         nil: "#2C98F0",

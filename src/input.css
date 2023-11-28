@@ -165,3 +165,14 @@ input[type="checkbox"]:checked .plus {
   left: 0;
   bottom: 0;
 } */
+
+.card_content {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+}
+
+.card_content:hover .work {
+  transform: translateY(0);
+}
+.card_content:hover .work_2 {
+  transform: translateY(0);
+}
