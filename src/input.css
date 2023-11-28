@@ -4,31 +4,31 @@
 
 @layer components {
   .caption {
-    @apply tracking-space font-Quicksand text-[0.6875rem] uppercase;
+    @apply font-Quicksand text-[0.6875rem] uppercase tracking-space;
   }
   .title {
-    @apply tracking-space font-playFair text-lg font-bold uppercase;
+    @apply font-playFair text-lg font-bold uppercase tracking-space;
   }
   .skillBar {
-    @apply bg-bgColor relative h-[6px] w-full rounded-md before:absolute before:h-[6px]  before:rounded-md  before:content-[''] after:absolute  after:top-[-3px] after:h-3 after:w-3 after:rounded-full after:content-[''];
+    @apply relative h-[6px] w-full rounded-md bg-bgColor before:absolute before:h-[6px]  before:rounded-md  before:content-[''] after:absolute  after:top-[-3px] after:h-3 after:w-3 after:rounded-full after:content-[''];
   }
   .blue_skillBar {
-    @apply before:w-3/4 before:bg-nil after:bg-nil after:left-[74%];
+    @apply before:w-3/4 before:bg-nil after:left-[74%] after:bg-nil;
   }
   .red_skillBar {
-    @apply before:w-3/5 before:bg-red-500 after:bg-red-500 after:left-[59%];
+    @apply before:w-3/5 before:bg-red-500 after:left-[59%] after:bg-red-500;
   }
   .yellow_skillBar {
-    @apply before:w-[85%] before:bg-yellow-500 after:bg-yellow-500 after:left-[84%];
+    @apply before:w-[85%] before:bg-yellow-500 after:left-[84%] after:bg-yellow-500;
   }
   .purple_skillBar {
-    @apply before:w-[90%] before:bg-purple-500 after:bg-purple-500 after:left-[89%];
+    @apply before:w-[90%] before:bg-purple-500 after:left-[89%] after:bg-purple-500;
   }
   .green_skillBar {
-    @apply before:w-[70%] before:bg-green-500 after:bg-green-500 after:left-[69%];
+    @apply before:w-[70%] before:bg-green-500 after:left-[69%] after:bg-green-500;
   }
   .indigo_skillBar {
-    @apply before:w-[80%] before:bg-indigo-500 after:bg-indigo-500 after:left-[79%];
+    @apply before:w-[80%] before:bg-indigo-500 after:left-[79%] after:bg-indigo-500;
   }
 }
 
@@ -42,6 +42,13 @@
   .path {
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  .bg-gray-200.bgBlue {
+    background-color: #2c98f0;
+  }
+  .text-textColor.color {
+    color: #fff;
   }
 }
 
@@ -125,3 +132,36 @@
   background-position: center;
   background-attachment: fixed;
 }
+
+input[type="checkbox"]:checked .accordion_head {
+  background-color: #2c98f0;
+}
+
+input[type="checkbox"]:checked ~ p {
+  color: white;
+}
+input[type="checkbox"]:checked .plus {
+  display: none;
+}
+
+/* .single_timeline::before {
+  content: "";
+  position: absolute;
+  border: medium solid red;
+  border-width: 10px 10px 10px 0;
+  left: -10px;
+  top: 6px;
+  border-color: transparent red transparent transparent;
+} */
+
+/* .timeline::after {
+  content: "";
+
+  position: absolute;
+  border: 4px solid red;
+  width: 1rem;
+  height: 1rem;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+} */
