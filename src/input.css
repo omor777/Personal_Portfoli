@@ -176,3 +176,16 @@ input[type="checkbox"]:checked .plus {
 .card_content:hover .work_2 {
   transform: translateY(0);
 }
+
+.card :nth-child(1) {
+  overflow: hidden;
+}
+
+.card :nth-child(1) > img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover :nth-child(1) > img {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.08);
+}
